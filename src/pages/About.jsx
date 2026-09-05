@@ -35,12 +35,36 @@ const timeline = [
 ]
 
 const gallery = [
-  { src: '/images/kitchen.jpg', label: 'Clean working environment', caption: 'Placeholder — hygienic food-handling imagery pending plant photographs' },
-  { src: '/images/storage.jpg', label: 'Organised handling', caption: 'Placeholder — organised storage imagery, not MM OVERSEAS premises' },
-  { src: '/images/mustard-seeds.jpg', label: 'Oilseeds', caption: 'Mustard seeds and related oilseed materials' },
-  { src: '/images/oil-pour.jpg', label: 'Edible oil', caption: 'Representative edible oil photography' },
-  { src: '/images/harvest.jpg', label: 'Agricultural origin', caption: 'Representative agricultural imagery' },
-  { src: '/images/mustard-field.jpg', label: 'Mustard crop', caption: 'Mustard / rapeseed field photography' },
+  {
+    src: '/images/plant-clean-environment.jpg',
+    label: 'Clean processing environment',
+    caption: 'Representative imagery — hygienic modern processing space (placeholder)',
+  },
+  {
+    src: '/images/plant-seed-cleaning.jpg',
+    label: 'Seed cleaning & preparation',
+    caption: 'Representative imagery — oilseed cleaning before processing (placeholder)',
+  },
+  {
+    src: '/images/plant-oilseeds.jpg',
+    label: 'Selected oilseeds',
+    caption: 'Mustard, sesame and groundnut materials prepared for processing',
+  },
+  {
+    src: '/images/plant-oil-extraction.jpg',
+    label: 'Oil extraction',
+    caption: 'Representative imagery — edible oil extraction equipment (placeholder)',
+  },
+  {
+    src: '/images/plant-packaging.jpg',
+    label: 'Packaging & finished oils',
+    caption: 'Representative imagery — packaging and finished product handling (placeholder)',
+  },
+  {
+    src: '/images/plant-storage-handling.jpg',
+    label: 'Storage & handling',
+    caption: 'Representative imagery — organised storage and handling (placeholder)',
+  },
 ]
 
 export default function About() {
