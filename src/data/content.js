@@ -48,7 +48,7 @@ export const cakes = [
     rawMaterial: 'Mustard seed processing',
     description:
       'Produced as part of mustard oilseed processing and forming a useful output within the oilseed value chain.',
-    image: '/images/mustard-seeds.jpg',
+    image: '/images/cake-mustard.jpg',
   },
   {
     slug: 'yellow-mustard-cake',
@@ -56,7 +56,7 @@ export const cakes = [
     rawMaterial: 'Yellow mustard seed processing',
     description:
       'Obtained through the processing of selected yellow mustard seeds, alongside edible oil production.',
-    image: '/images/yellow-seeds.jpg',
+    image: '/images/cake-yellow-mustard.jpg',
   },
   {
     slug: 'sesame-cake',
@@ -64,7 +64,7 @@ export const cakes = [
     rawMaterial: 'Sesame seed processing',
     description:
       'A processing output from sesame oilseed operations, supporting productive use of oilseed residues.',
-    image: '/images/sesame.jpg',
+    image: '/images/cake-sesame.jpg',
   },
   {
     slug: 'groundnut-cake',
@@ -72,24 +72,24 @@ export const cakes = [
     rawMaterial: 'Groundnut kernel processing',
     description:
       'Produced during groundnut oil processing, contributing to a more complete use of procured oilseeds.',
-    image: '/images/peanuts.jpg',
+    image: '/images/cake-groundnut.jpg',
   },
 ]
 
 export const procured = [
   {
     name: 'Mustard Seeds',
-    image: '/images/mustard-seeds.jpg',
+    image: '/images/procure-mustard-seeds.jpg',
     text: 'Selected mustard seeds sourced with attention to condition, cleanliness and suitability for processing.',
   },
   {
     name: 'Groundnut Kernels',
-    image: '/images/peanuts.jpg',
+    image: '/images/procure-groundnut-kernels.jpg',
     text: 'Groundnut kernels procured for quality, handling and fitness for edible oil manufacturing.',
   },
   {
     name: 'Sesame Seeds',
-    image: '/images/sesame.jpg',
+    image: '/images/procure-sesame-seeds.jpg',
     text: 'Sesame seeds chosen for consistency and careful handling before they enter processing.',
   },
 ]
