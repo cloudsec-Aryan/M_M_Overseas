@@ -72,8 +72,8 @@ export default function Values() {
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <img
-            src="/images/mustard-field.jpg"
-            alt="Agricultural landscape representing shared growth"
+            src="/images/partners-growing-together.jpg"
+            alt="Business partners shaking hands over edible oil and oilseeds — growing together"
             className="min-h-[360px] w-full rounded-2xl object-cover"
           />
           <div>
