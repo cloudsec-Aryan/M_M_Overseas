@@ -41,6 +41,11 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link to="/terms" className="text-white/80 transition hover:text-white">
+                Terms & Conditions
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -77,9 +82,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-5 py-5 text-sm text-white/60 lg:px-8">
-          © 2026 MM OVERSEAS. All Rights Reserved.
-        </p>
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+          <p>© 2026 MM OVERSEAS. All Rights Reserved.</p>
+          <Link to="/terms" className="transition hover:text-white">
+            Terms & Conditions
+          </Link>
+        </div>
       </div>
     </footer>
   )
