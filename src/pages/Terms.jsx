@@ -12,8 +12,10 @@ export default function Terms() {
   return (
     <>
       <Seo
-        title="Terms & Conditions | MM OVERSEAS"
-        description="Terms and conditions of MM OVERSEAS covering jurisdiction in Bhiwani, payment terms, vehicle dispatch and bargains through authorised brokers and channel partners."
+        title="Terms & Commercial Conditions | MM OVERSEAS Bhiwani"
+        description="Commercial terms, payment policies, jurisdiction (Bhiwani), vehicle dispatch and trading conditions of MM OVERSEAS."
+        keywords="MM Overseas Terms, Commercial Policy, Bhiwani Jurisdiction, Edible Oil Dispatch Terms"
+        canonicalPath="/terms"
       />
 
       <section className="relative overflow-hidden border-b border-line">
@@ -25,16 +27,16 @@ export default function Terms() {
               'radial-gradient(circle at 20% 20%, #F4C400 0%, transparent 40%), radial-gradient(circle at 80% 10%, #F59A00 0%, transparent 35%)',
           }}
         />
-        <div className="relative mx-auto max-w-4xl px-5 py-16 lg:px-8 lg:py-20">
-          <div className="flex flex-wrap items-center gap-4">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/20 bg-white p-2 shadow-lg sm:h-20 sm:w-20">
-              <img src="/favicon-source.png" alt="MM OVERSEAS" className="h-full w-full object-contain" />
+        <div className="relative mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+            <div className="flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/20 bg-white p-2 shadow-lg">
+              <img src="/favicon-source.png" alt="MM OVERSEAS Brand Seal" className="h-full w-full object-contain" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mustard">
                 {isHi ? 'कानूनी जानकारी' : 'Legal Information'}
               </p>
-              <h1 className="mt-2 font-serif text-4xl text-white sm:text-5xl">{content.title}</h1>
+              <h1 className="mt-1 font-serif text-3xl text-white sm:mt-2 sm:text-5xl">{content.title}</h1>
             </div>
           </div>
 

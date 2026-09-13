@@ -19,8 +19,10 @@ export default function Procurement() {
   return (
     <>
       <Seo
-        title="Procurement & Quality | Oilseed Sourcing | MM OVERSEAS"
-        description="MM OVERSEAS procurement focuses on mustard seeds, groundnut kernels and sesame seeds, with attention to cleanliness, handling and processing suitability."
+        title="Oilseed Procurement & Quality Standards | Mustard, Sesame & Groundnut | MM OVERSEAS"
+        description="MM OVERSEAS procures quality mustard seeds, groundnut kernels and sesame seeds with disciplined grading, hygienic handling and fair pricing for farmers and suppliers in Haryana."
+        keywords="Oilseed Procurement Haryana, Mustard Seed Sourcing, Sesame Seed Procurement, Groundnut Procurement Bhiwani, Seed Quality Inspection, Raw Material Sourcing"
+        canonicalPath="/procurement-quality"
       />
       <HeroSection
         compact
@@ -30,14 +32,14 @@ export default function Procurement() {
         subtitle="At MM OVERSEAS, procurement is an important part of our quality approach. We focus on sourcing suitable oilseeds and maintaining attention to raw material quality before processing begins."
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
         <SectionHeading eyebrow="Currently procured" title="Oilseeds We Source">
           <p>
             Our present procurement focus includes mustard seeds, groundnut kernels and sesame seeds — materials chosen
             for their role in our edible oil and oil cake production.
           </p>
         </SectionHeading>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:mt-12 md:grid-cols-3">
           {procured.map((item) => (
             <ProcurementCard key={item.name} {...item} />
           ))}
@@ -45,29 +47,29 @@ export default function Procurement() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeading eyebrow="Quality selection" title="What We Look For" />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-5">
             {selection.map((item) => (
-              <article key={item.title} className="rounded-xl border border-line p-6">
-                <h3 className="font-serif text-2xl text-forest">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{item.text}</p>
+              <article key={item.title} className="rounded-xl border border-line p-5 sm:p-6 shadow-xs transition hover:border-forest/30">
+                <h3 className="font-serif text-xl sm:text-2xl text-forest">{item.title}</h3>
+                <p className="mt-2 text-xs sm:text-sm leading-relaxed text-muted sm:mt-3">{item.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
         <SectionHeading eyebrow="Process" title="From Procurement to Product" align="center" />
-        <ol className="mt-12 flex flex-col items-center gap-3">
+        <ol className="mt-8 sm:mt-12 flex flex-col items-center gap-2 sm:gap-3">
           {flow.map((step, i) => (
             <li key={step} className="flex w-full max-w-md flex-col items-center">
-              <div className="w-full rounded-md border border-line bg-white px-6 py-4 text-center font-semibold tracking-wide text-forest">
+              <div className="w-full rounded-xl border border-line bg-white px-5 py-3.5 sm:py-4 text-center font-semibold text-sm sm:text-base tracking-wide text-forest shadow-xs">
                 {step}
               </div>
               {i < flow.length - 1 && (
-                <span className="my-1 text-orange" aria-hidden>
+                <span className="my-1 text-orange text-lg" aria-hidden>
                   ↓
                 </span>
               )}
@@ -77,7 +79,7 @@ export default function Procurement() {
       </section>
 
       <section className="bg-cream-warm">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-20 lg:grid-cols-2 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:gap-10 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8">
           <div>
             <SectionHeading eyebrow="Compliance" title="Food Safety & Hygiene">
               <p>

@@ -36,8 +36,10 @@ export default function Values() {
   return (
     <>
       <Seo
-        title="Our Values | Achha Khao, Achha Khilao | MM OVERSEAS"
-        description="MM OVERSEAS is guided by Achha Khao, Achha Khilao — a philosophy of quality for families, respect for people, fair partnerships and shared growth."
+        title="Our Values & Ethics | Achha Khao, Achha Khilao | MM OVERSEAS"
+        description="MM OVERSEAS operates with the philosophy of Achha Khao, Achha Khilao — prioritising genuine food purity, honest business practices, respect for partners, and quality edible oils."
+        keywords="MM Overseas Values, Achha Khao Achha Khilao, Edible Oil Ethics, Purity Guarantee, Quality Manufacturing Bhiwani"
+        canonicalPath="/values"
       />
       <HeroSection
         compact
@@ -47,19 +49,23 @@ export default function Values() {
         subtitle="Quality is not only a manufacturing outcome. It is a way of choosing what we would serve ourselves, and what we are prepared to share with others."
       />
 
-      <section className="mx-auto max-w-5xl px-5 py-20 text-center lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange">Brand philosophy</p>
-        <h2 className="mt-6 font-serif text-5xl leading-tight text-forest sm:text-7xl">Achha Khao, Achha Khilao</h2>
-        <div className="mx-auto mt-6 h-px w-24 bg-mustard" />
-        <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-muted">
+      <section className="mx-auto max-w-5xl px-4 py-12 text-center sm:px-6 sm:py-20 lg:px-8">
+        <span className="inline-block rounded-full border border-orange/30 bg-orange/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-orange">
+          Brand philosophy
+        </span>
+        <h2 className="mt-4 font-serif text-3xl leading-tight text-forest xs:text-4xl sm:mt-6 sm:text-6xl lg:text-7xl">
+          Achha Khao, Achha Khilao
+        </h2>
+        <div className="mx-auto mt-4 h-0.5 w-20 bg-mustard sm:mt-6 sm:w-24" />
+        <p className="mx-auto mt-6 max-w-3xl text-sm sm:text-base lg:text-lg leading-relaxed text-muted">
           We believe that quality is not only about producing a product; it is about creating something we can
           confidently choose for ourselves, our families and the people we care about.
         </p>
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-          <div className="grid gap-6 lg:grid-cols-2">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+          <div className="grid gap-5 sm:gap-6 lg:grid-cols-2">
             {values.map((v) => (
               <ValueCard key={v.index} index={v.index} title={v.title}>
                 {v.text}

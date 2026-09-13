@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import EnquiryPopup from './EnquiryPopup'
 import Preloader from './Preloader'
+import MobileQuickBar from './MobileQuickBar'
 
 const EnquiryContext = createContext(null)
 
@@ -51,7 +52,7 @@ export default function Layout() {
 
   return (
     <EnquiryContext.Provider value={value}>
-      <div className="min-h-screen bg-cream text-ink">
+      <div className="min-h-screen bg-cream text-ink pb-20 md:pb-0">
         <Preloader />
         <a
           href="#main"
@@ -65,6 +66,7 @@ export default function Layout() {
         </main>
         <Footer />
         <EnquiryPopup open={enquiryOpen} onClose={closeEnquiry} />
+        <MobileQuickBar />
       </div>
     </EnquiryContext.Provider>
   )

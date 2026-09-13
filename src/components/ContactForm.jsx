@@ -85,13 +85,14 @@ export default function ContactForm({ compact = false, idPrefix = '', onSubmitte
           id={`${idPrefix}message`}
           name="message"
           required
-          rows={compact ? 4 : 5}
-          className="w-full rounded-md border border-line bg-white px-4 py-3 text-sm outline-none ring-forest/20 focus:ring-2"
+          rows={compact ? 3 : 5}
+          placeholder="Please describe your requirements (quantity, product type, delivery location)..."
+          className="w-full rounded-md border border-line bg-white px-4 py-3 text-base sm:text-sm outline-none ring-forest/20 focus:ring-2 focus:border-forest"
         />
       </div>
       <button
         type="submit"
-        className="rounded-md bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest-deep"
+        className="w-full sm:w-auto rounded-md bg-forest px-8 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-forest-deep active:scale-98"
       >
         Submit Enquiry
       </button>
@@ -110,7 +111,7 @@ function Field({ label, id, type = 'text', required, compact }) {
         name={id}
         type={type}
         required={required}
-        className={`w-full rounded-md border border-line bg-white px-4 text-sm outline-none ring-forest/20 focus:ring-2 ${
+        className={`w-full rounded-md border border-line bg-white px-4 text-base sm:text-sm outline-none ring-forest/20 focus:ring-2 focus:border-forest ${
           compact ? 'py-2.5' : 'py-3'
         }`}
       />

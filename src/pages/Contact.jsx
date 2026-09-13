@@ -27,11 +27,16 @@ export default function Contact() {
   const { openEnquiry } = useEnquiry()
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(contactInfo.mapQuery)}&output=embed`
 
+  const waMessage = encodeURIComponent('Hello MM OVERSEAS, I would like to make an enquiry regarding your products and services.')
+  const waHref = `https://wa.me/91${contactInfo.phone}?text=${waMessage}`
+
   return (
     <>
       <Seo
-        title="Contact Us | MM OVERSEAS"
-        description="Contact MM OVERSEAS in Devsar, Bhiwani for edible oil, oil cake, oilseed procurement and partnership enquiries."
+        title="Contact MM OVERSEAS | Edible Oil Manufacturer Devsar Bhiwani Haryana"
+        description="Get in touch with MM OVERSEAS for bulk edible oils, mustard oil, yellow mustard oil, sesame oil, groundnut oil, oil cakes and oilseed procurement. Phone: +91 7419907550."
+        keywords="Contact MM Overseas, Edible Oil Supplier Contact, Mustard Oil Bhiwani, Devsar Bhiwani Edible Oil, Oilseed Procurement Contact Haryana"
+        canonicalPath="/contact"
       />
       <HeroSection
         compact
@@ -41,58 +46,81 @@ export default function Contact() {
         subtitle="Share a product, procurement or partnership enquiry. Reach us in Devsar, Bhiwani or use the form below."
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
           {cards.map((card) => (
             <button
               key={card.title}
               type="button"
               onClick={openEnquiry}
-              className="rounded-xl border border-line bg-white p-6 text-left transition hover:border-forest/30 hover:shadow-[0_12px_30px_rgba(6,75,60,0.06)]"
+              className="group rounded-xl border border-line bg-white p-5 text-left transition hover:border-forest/40 hover:shadow-[0_12px_30px_rgba(6,75,60,0.08)] sm:p-6 active:scale-98"
             >
-              <h2 className="font-serif text-2xl text-forest">{card.title}</h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted">{card.text}</p>
-              <span className="mt-4 inline-block text-sm font-semibold text-orange">Enquire →</span>
+              <h2 className="font-serif text-xl sm:text-2xl text-forest group-hover:text-forest-deep">{card.title}</h2>
+              <p className="mt-2 text-xs sm:text-sm leading-relaxed text-muted">{card.text}</p>
+              <span className="mt-4 inline-block text-xs sm:text-sm font-semibold text-orange group-hover:text-forest">Enquire Online →</span>
             </button>
           ))}
         </div>
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:px-8">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange">Reach us</p>
-            <h2 className="mt-3 font-serif text-4xl text-forest">Enquiry details</h2>
-            <p className="mt-4 text-sm leading-relaxed text-muted">
+            <span className="w-fit rounded-full border border-orange/30 bg-orange/10 px-3 py-0.5 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
+              Reach us
+            </span>
+            <h2 className="mt-3 font-serif text-3xl sm:text-4xl text-forest">Enquiry Details & Office</h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
               We welcome business, product, procurement and partnership conversations.
             </p>
-            <dl className="mt-8 space-y-6 text-sm">
-              <div>
-                <dt className="font-semibold text-forest">Address</dt>
+
+            {/* Quick Contact Buttons for Mobile & Desktop */}
+            <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+              <a
+                href={contactInfo.phoneHref}
+                className="flex items-center justify-center gap-2 rounded-xl bg-forest px-4 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-forest-deep active:scale-98"
+              >
+                <span>📞</span>
+                <span>Call +91 {contactInfo.phone}</span>
+              </a>
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-4 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800 active:scale-98"
+              >
+                <span>💬</span>
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
+
+            <dl className="mt-8 space-y-5 text-sm">
+              <div className="rounded-xl border border-line bg-cream/40 p-4">
+                <dt className="font-semibold text-forest">📍 Manufacturing Plant & Office</dt>
                 <dd className="mt-1 text-muted">
                   {contactInfo.addressLine1}
                   <br />
                   {contactInfo.addressLine2}
                 </dd>
               </div>
-              <div>
-                <dt className="font-semibold text-forest">Phone</dt>
+              <div className="rounded-xl border border-line bg-cream/40 p-4">
+                <dt className="font-semibold text-forest">📞 Direct Phone</dt>
                 <dd className="mt-1">
-                  <a href={contactInfo.phoneHref} className="text-muted transition hover:text-forest">
-                    {contactInfo.phone}
+                  <a href={contactInfo.phoneHref} className="text-forest font-semibold underline transition hover:text-forest-deep">
+                    +91 {contactInfo.phone}
                   </a>
                 </dd>
               </div>
-              <div>
-                <dt className="font-semibold text-forest">Email</dt>
+              <div className="rounded-xl border border-line bg-cream/40 p-4">
+                <dt className="font-semibold text-forest">✉️ Email Support</dt>
                 <dd className="mt-1">
-                  <a href={contactInfo.emailHref} className="text-muted transition hover:text-forest">
+                  <a href={contactInfo.emailHref} className="text-forest font-medium underline transition hover:text-forest-deep">
                     {contactInfo.email}
                   </a>
                 </dd>
               </div>
             </dl>
-            <div className="mt-8 overflow-hidden rounded-xl border border-line bg-cream">
+            <div className="mt-6 overflow-hidden rounded-xl border border-line bg-cream shadow-xs">
               <iframe
                 title="MM OVERSEAS location — Devsar, Bhiwani"
                 src={mapSrc}
@@ -102,11 +130,10 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="rounded-2xl border border-line p-6 sm:p-8">
-            <h2 className="font-serif text-3xl text-forest">Submit an enquiry</h2>
-            <p className="mt-2 mb-8 text-sm text-muted">
-              This form is currently a user-interface prototype. For a direct response, call or email us using the
-              details on this page.
+          <div className="rounded-2xl border border-line bg-white p-5 shadow-xs sm:p-8">
+            <h2 className="font-serif text-2xl sm:text-3xl text-forest">Submit an Enquiry</h2>
+            <p className="mt-2 mb-6 text-xs sm:text-sm text-muted">
+              Fill in your details below and our team will get in touch with you promptly.
             </p>
             <ContactForm />
           </div>

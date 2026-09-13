@@ -71,8 +71,10 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About Us | MM OVERSEAS"
-        description="MM OVERSEAS is an edible oil manufacturer and oilseed processor working with selected mustard, sesame and groundnut oilseeds."
+        title="About MM OVERSEAS | Edible Oil Manufacturer & Processing Facility Bhiwani"
+        description="Learn about MM OVERSEAS — our modern edible oil processing plant in Devsar, Bhiwani, quality oilseed procurement, hygiene standards, and ethical business philosophy."
+        keywords="About MM Overseas, Edible Oil Factory Bhiwani, Oilseed Processing Plant Haryana, Mustard Oil Mill, Food Safety Edible Oil"
+        canonicalPath="/about"
       />
       <HeroSection
         compact
@@ -82,8 +84,8 @@ export default function About() {
         subtitle="MM OVERSEAS is an edible oil manufacturing and oilseed processing company working with selected oilseeds to produce edible oils and oil cakes."
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <SectionHeading eyebrow="Our work" title="From procurement to finished products">
             <p>
               Our work begins with the procurement of selected oilseeds and continues through cleaning, processing, oil
@@ -91,25 +93,25 @@ export default function About() {
               cleanliness and consistency.
             </p>
           </SectionHeading>
-          <p className="self-center text-base leading-relaxed text-muted">
+          <p className="self-center text-sm sm:text-base leading-relaxed text-muted">
             We do not treat manufacturing as a single isolated step. Procurement, hygiene, processing discipline and
             finished-product care are connected — because the character of the oil reflects the care taken before it
             reaches the bottle.
           </p>
         </div>
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-10 sm:mt-14 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-5">
           {areas.map((area, i) => (
-            <article key={area.title} className="rounded-xl border border-line bg-white p-6">
+            <article key={area.title} className="rounded-xl border border-line bg-white p-5 sm:p-6 shadow-xs transition hover:border-forest/30">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange">0{i + 1}</p>
-              <h3 className="mt-3 font-serif text-2xl text-forest">{area.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted">{area.text}</p>
+              <h3 className="mt-3 font-serif text-xl sm:text-2xl text-forest">{area.title}</h3>
+              <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-muted">{area.text}</p>
             </article>
           ))}
         </div>
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeading eyebrow="Our plant" title="A Modern Processing Environment">
             <p>
               Our newly furnished plant has been developed with a strong focus on cleanliness, organised operations and
@@ -117,16 +119,16 @@ export default function About() {
               and handling.
             </p>
           </SectionHeading>
-          <p className="mt-6 max-w-3xl text-sm text-muted">
+          <p className="mt-4 sm:mt-6 max-w-3xl text-xs sm:text-sm text-muted">
             Photographs below include representative industry imagery. Actual MM OVERSEAS plant photographs can replace
             these placeholders when available.
           </p>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 sm:mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {gallery.map((item) => (
-              <figure key={item.label} className="overflow-hidden rounded-xl border border-line bg-cream">
-                <img src={item.src} alt={item.label} className="aspect-[4/3] w-full object-cover" />
+              <figure key={item.label} className="overflow-hidden rounded-xl border border-line bg-cream shadow-xs">
+                <img src={item.src} alt={`${item.label} - MM OVERSEAS Plant`} className="aspect-[4/3] w-full object-cover" />
                 <figcaption className="p-4">
-                  <p className="font-medium text-forest">{item.label}</p>
+                  <p className="font-semibold text-sm sm:text-base text-forest">{item.label}</p>
                   <p className="mt-1 text-xs text-muted">{item.caption}</p>
                 </figcaption>
               </figure>
@@ -135,14 +137,14 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
         <SectionHeading eyebrow="Our approach" title="A Clear Path From Seed to Supply" />
-        <ol className="mt-12 grid gap-6 md:grid-cols-5">
+        <ol className="mt-8 sm:mt-12 grid gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {timeline.map((step) => (
-            <li key={step.n} className="relative rounded-xl border border-line bg-white p-6">
-              <p className="font-serif text-4xl text-mustard">{step.n}</p>
-              <h3 className="mt-3 font-serif text-2xl text-forest">{step.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted">{step.text}</p>
+            <li key={step.n} className="relative rounded-xl border border-line bg-white p-5 sm:p-6 shadow-xs">
+              <p className="font-serif text-3xl sm:text-4xl text-mustard">{step.n}</p>
+              <h3 className="mt-2 font-serif text-xl sm:text-2xl text-forest">{step.title}</h3>
+              <p className="mt-2 text-xs sm:text-sm leading-relaxed text-muted">{step.text}</p>
             </li>
           ))}
         </ol>

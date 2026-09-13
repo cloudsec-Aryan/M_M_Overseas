@@ -42,67 +42,85 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="MM OVERSEAS | Edible Oil Manufacturer & Oilseed Processing"
-        description="MM OVERSEAS is an edible oil manufacturing and oilseed processing company producing mustard oil, yellow mustard oil, sesame oil, groundnut oil and oil cakes."
+        title="MM OVERSEAS | Premium Edible Oil Manufacturer & Oilseed Processing"
+        description="MM OVERSEAS is a leading edible oil manufacturing and oilseed processing company producing mustard oil, yellow mustard oil, sesame oil, groundnut oil and nutrient-rich oil cakes."
+        keywords="Mustard Oil Manufacturer, Edible Oil Manufacturer Haryana, Yellow Mustard Oil, Sesame Oil, Groundnut Oil, Mustard Cake, Sesame Cake, Groundnut Cake, Oilseed Procurement, Oilseed Processing Bhiwani"
+        canonicalPath="/"
       />
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/mustard-flowers.jpg" alt="" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/92 to-cream/35" />
+          <img
+            src="/images/mustard-flowers.jpg"
+            alt="Golden yellow mustard flowers in blooming harvest field"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/95 to-cream/50 sm:to-cream/35" />
         </div>
-        <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-8 lg:py-24">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-orange">
-              Edible oil manufacturer • Oilseed processing
-            </p>
-            <h1 className="mt-5 font-serif text-5xl leading-[1.08] text-forest sm:text-6xl lg:text-[4.4rem]">
-              Procured From Trusted Sourced.
+            <span className="inline-flex items-center gap-2 rounded-full border border-orange/30 bg-orange/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
+              <span className="h-1.5 w-1.5 rounded-full bg-orange animate-pulse" />
+              Edible Oil Manufacturer • Oilseed Processing
+            </span>
+            <h1 className="mt-4 font-serif text-3xl leading-[1.12] text-forest xs:text-4xl sm:text-5xl lg:text-[4.2rem]">
+              Procured From Trusted Sources.
               <br />
               Carefully Processed.
               <br />
               Made for Better Living.
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:mt-6 sm:text-base lg:text-lg">
               MM OVERSEAS is an edible oil manufacturing and oilseed processing company focused on quality oilseeds,
               hygienic processing and consistent food products.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center">
               <Link
                 to="/products"
-                className="rounded-md bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest-deep"
+                className="w-full rounded-md bg-forest px-6 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-forest-deep sm:w-auto"
               >
                 Explore Our Products
               </Link>
               <Link
                 to="/contact"
-                className="rounded-md border border-forest/20 bg-white px-6 py-3 text-sm font-semibold text-forest transition hover:border-forest"
+                className="w-full rounded-md border border-forest/20 bg-white/80 px-6 py-3.5 text-center text-sm font-semibold text-forest backdrop-blur-sm transition hover:border-forest sm:w-auto"
               >
                 Talk to Us
               </Link>
             </div>
-            <p className="mt-8 text-xs font-semibold uppercase tracking-[0.16em] text-forest/70">
+            <p className="mt-6 text-xs font-semibold uppercase tracking-[0.16em] text-forest/70 sm:mt-8">
               Oilseed Procurement • Modern Processing • Quality Focused
             </p>
-            <img src="/logo.png" alt="" className="mt-6 h-16 w-auto sm:hidden" />
+            <div className="mt-6 flex items-center gap-3 sm:hidden">
+              <img
+                src="/logo.png"
+                alt="MM OVERSEAS Logo"
+                className="h-12 w-auto object-contain"
+              />
+              <span className="font-serif text-lg font-semibold text-forest">MM OVERSEAS</span>
+            </div>
           </div>
           <div className="relative">
-            <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_24px_60px_rgba(6,75,60,0.12)]">
+            <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_20px_50px_rgba(6,75,60,0.12)]">
               <img
                 src="/images/hero-purely-sourced.jpg"
-                alt="Golden edible oil with mustard seeds, sesame seeds and groundnuts"
-                className="h-72 w-full object-cover sm:h-[28rem]"
+                alt="Purely sourced edible oil with raw mustard seeds, sesame and groundnut kernels"
+                className="h-64 w-full object-cover sm:h-[28rem]"
               />
             </div>
-            <div className="absolute -right-2 -top-6 hidden rounded-xl border border-line bg-white/95 p-3 shadow-lg sm:block">
-              <img src="/logo.png" alt="MM OVERSEAS" className="h-16 w-auto" />
+            <div className="absolute -right-2 -top-6 hidden rounded-xl border border-line bg-white/95 p-3 shadow-lg backdrop-blur-sm sm:block">
+              <img
+                src="/logo.png"
+                alt="MM OVERSEAS Brand Logo"
+                className="h-16 w-auto object-contain"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
             <SectionHeading eyebrow="Who we are" title="From Quality Seeds to Quality Oils">
               <p>
@@ -110,37 +128,37 @@ export default function Home() {
                 and processed in a modern, hygienic environment to produce quality edible oils and valuable oil cakes.
               </p>
             </SectionHeading>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted sm:mt-6 sm:text-base">
               Our work spans the oilseed value chain — from procurement through cleaning, extraction and finished
               production — so that each stage supports the next.
             </p>
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+            <ul className="mt-6 grid gap-3 sm:mt-8 sm:grid-cols-2">
               {stages.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-forest">
+                <li key={item} className="flex items-start gap-3 text-sm text-forest font-medium">
                   <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-mustard" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="overflow-hidden rounded-2xl border border-line">
+          <div className="overflow-hidden rounded-2xl border border-line shadow-sm">
             <img
               src="/images/quality-seeds-to-oils.jpg"
               alt="Quality oilseeds with golden edible oil — from selected seeds to carefully processed oils"
-              className="h-full min-h-[420px] w-full object-cover"
+              className="h-full min-h-[260px] sm:min-h-[400px] w-full object-cover"
             />
           </div>
         </div>
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeading eyebrow="Edible oils" title="Our Products" align="center">
             <p>
               A focused range of edible oils produced from carefully selected mustard, sesame and groundnut oilseeds.
             </p>
           </SectionHeading>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
             {oils.map((oil) => (
               <ProductCard key={oil.slug} image={oil.image} name={oil.name} description={oil.short} />
             ))}
@@ -148,19 +166,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
         <SectionHeading eyebrow="Oil cakes" title="Value Beyond Oil">
           <p>
             Our processing also produces quality oil cakes, allowing productive use of oilseed residues and serving
             customers across the oilseed value chain.
           </p>
         </SectionHeading>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {cakes.map((cake) => (
-            <article key={cake.slug} className="overflow-hidden rounded-xl border border-line bg-white">
-              <img src={cake.image} alt={cake.name} className="aspect-[4/3] w-full object-cover" />
-              <div className="p-5">
-                <h3 className="font-serif text-2xl text-forest">{cake.name}</h3>
+            <article key={cake.slug} className="group overflow-hidden rounded-xl border border-line bg-white shadow-xs transition hover:shadow-md">
+              <img src={cake.image} alt={`${cake.name} - MM OVERSEAS byproduct for cattle feed & agriculture`} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
+              <div className="p-4 sm:p-5">
+                <h3 className="font-serif text-xl sm:text-2xl text-forest">{cake.name}</h3>
               </div>
             </article>
           ))}
@@ -168,39 +186,41 @@ export default function Home() {
       </section>
 
       <section className="bg-cream-warm">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeading eyebrow="Sourcing" title="Quality Starts at Procurement">
             <p>
               Quality begins long before processing. Our procurement approach focuses on sourcing good-quality oilseeds
               from reliable sources, with attention to cleanliness, condition and suitability for manufacturing.
             </p>
           </SectionHeading>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-8 grid gap-6 sm:mt-12 md:grid-cols-3">
             {procured.map((item) => (
               <ProcurementCard key={item.name} {...item} />
             ))}
           </div>
-          <Link
-            to="/procurement-quality"
-            className="mt-10 inline-flex rounded-md bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest-deep"
-          >
-            Know More About Our Procurement
-          </Link>
+          <div className="mt-8 sm:mt-10">
+            <Link
+              to="/procurement-quality"
+              className="inline-flex w-full justify-center rounded-md bg-forest px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-forest-deep sm:w-auto"
+            >
+              Know More About Our Procurement
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="rounded-2xl border border-line bg-white px-6 py-12 sm:px-12">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+        <div className="rounded-2xl border border-line bg-white px-5 py-10 shadow-xs sm:px-12 sm:py-16">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-orange">Brand philosophy</p>
-          <h2 className="mt-4 font-serif text-4xl text-forest sm:text-5xl">Our Promise: Achha Khao, Achha Khilao</h2>
-          <p className="mt-6 max-w-3xl font-serif text-2xl italic leading-snug text-forest-soft">
+          <h2 className="mt-3 font-serif text-3xl text-forest sm:mt-4 sm:text-5xl">Our Promise: Achha Khao, Achha Khilao</h2>
+          <p className="mt-4 max-w-3xl font-serif text-xl italic leading-snug text-forest-soft sm:mt-6 sm:text-2xl">
             Achha Khao, Achha Khilao — choose good food for yourself, and share it with those around you.
           </p>
-          <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted">
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted sm:mt-5 sm:text-base">
             For us, quality is personal. We aim to make products we would be comfortable serving to our own families,
             and we extend the same standard of care to customers, partners and everyone associated with our business.
           </p>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
             <ValueCard index="01" title="Quality First">
               Careful seed selection and disciplined processing sit at the centre of every product we make.
             </ValueCard>
@@ -218,14 +238,14 @@ export default function Home() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeading eyebrow="Why MM OVERSEAS" title="A Measured Approach to Quality" />
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-5">
             {why.map((item, i) => (
-              <article key={item.title} className="rounded-xl border border-line p-6">
+              <article key={item.title} className="rounded-xl border border-line p-5 sm:p-6 transition hover:border-forest/30">
                 <p className="font-serif text-3xl text-mustard">0{i + 1}</p>
-                <h3 className="mt-3 font-serif text-xl text-forest">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{item.text}</p>
+                <h3 className="mt-3 font-serif text-lg sm:text-xl text-forest">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted sm:mt-3">{item.text}</p>
               </article>
             ))}
           </div>
