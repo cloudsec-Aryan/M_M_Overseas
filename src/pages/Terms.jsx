@@ -30,7 +30,7 @@ export default function Terms() {
         <div className="relative mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <div className="flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/20 bg-white p-2 shadow-lg">
-              <img src="/favicon-source.png" alt="MM OVERSEAS Brand Seal" className="h-full w-full object-contain" />
+              <img src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341476/mm-overseas/favicon-source.png" alt="MM OVERSEAS Brand Seal" className="h-full w-full object-contain" />
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-mustard">

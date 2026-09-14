@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const defaultTitle = 'MM OVERSEAS | Edible Oil Manufacturer & Oilseed Processing'
+const defaultTitle = 'Mmoverseasindia ! Edible oil | Edible Oil Manufacturer & Oilseed Processing'
 const defaultDescription =
   'MM OVERSEAS is a premier edible oil manufacturing and oilseed processing company producing premium mustard oil, yellow mustard oil, sesame oil, groundnut oil and oil cakes in Devsar, Bhiwani, Haryana.'
 const defaultKeywords =
@@ -11,7 +11,7 @@ export default function Seo({
   description,
   keywords,
   canonicalPath,
-  image = '/android-chrome-512x512.png',
+  image = 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png',
   schema,
 }) {
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function Seo({
     setMeta('meta[name="keywords"]', 'content', finalKeywords)
 
     // Canonical link
-    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://www.mmoverseas.com'
+    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://www.mmoverseasindia.com'
     const path = canonicalPath || (typeof window !== 'undefined' ? window.location.pathname : '/')
     const fullUrl = `${origin}${path}`
 

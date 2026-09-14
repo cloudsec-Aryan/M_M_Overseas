@@ -36,32 +36,32 @@ const timeline = [
 
 const gallery = [
   {
-    src: '/images/plant-clean-environment.jpg',
+    src: 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363278/mm-overseas/plant-clean-environment.png',
     label: 'Clean processing environment',
     caption: 'Representative imagery — hygienic modern processing space (placeholder)',
   },
   {
-    src: '/images/plant-seed-cleaning.jpg',
+    src: 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363292/mm-overseas/plant-seed-cleaning.png',
     label: 'Seed cleaning & preparation',
     caption: 'Representative imagery — oilseed cleaning before processing (placeholder)',
   },
   {
-    src: '/images/plant-oilseeds.jpg',
+    src: 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363285/mm-overseas/plant-oilseeds.png',
     label: 'Selected oilseeds',
     caption: 'Mustard, sesame and groundnut materials prepared for processing',
   },
   {
-    src: '/images/plant-oil-extraction.jpg',
+    src: 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363281/mm-overseas/plant-oil-extraction.png',
     label: 'Oil extraction',
     caption: 'Representative imagery — edible oil extraction equipment (placeholder)',
   },
   {
-    src: '/images/plant-packaging.jpg',
+    src: 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363289/mm-overseas/plant-packaging.png',
     label: 'Packaging & finished oils',
     caption: 'Representative imagery — packaging and finished product handling (placeholder)',
   },
   {
-    src: '/images/plant-storage-handling.jpg',
+    src: 'https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363295/mm-overseas/plant-storage-handling.png',
     label: 'Storage & handling',
     caption: 'Representative imagery — organised storage and handling (placeholder)',
   },
@@ -78,7 +78,7 @@ export default function About() {
       />
       <HeroSection
         compact
-        image="/images/harvest.jpg"
+        image="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341505/mm-overseas/harvest.jpg"
         eyebrow="About MM OVERSEAS"
         title="Built Around Quality, Trust & Better Food"
         subtitle="MM OVERSEAS is an edible oil manufacturing and oilseed processing company working with selected oilseeds to produce edible oils and oil cakes."

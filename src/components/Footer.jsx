@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:gap-10 sm:px-6 sm:py-16 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <img
-            src="/logo.png"
+            src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png"
             alt="MM OVERSEAS Logo - Edible Oil Manufacturer"
             className="mb-4 h-16 w-auto rounded-xl bg-white p-2 shadow-xs sm:h-20"
           />

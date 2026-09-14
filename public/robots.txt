@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mmoverseas.com/sitemap.xml
+Sitemap: https://www.mmoverseasindia.com/sitemap.xml

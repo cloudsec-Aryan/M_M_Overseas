@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="MM OVERSEAS | Premium Edible Oil Manufacturer & Oilseed Processing"
+        title="Mmoverseasindia ! Edible oil | Premium Edible Oil Manufacturer & Oilseed Processing"
         description="MM OVERSEAS is a leading edible oil manufacturing and oilseed processing company producing mustard oil, yellow mustard oil, sesame oil, groundnut oil and nutrient-rich oil cakes."
         keywords="Mustard Oil Manufacturer, Edible Oil Manufacturer Haryana, Yellow Mustard Oil, Sesame Oil, Groundnut Oil, Mustard Cake, Sesame Cake, Groundnut Cake, Oilseed Procurement, Oilseed Processing Bhiwani"
         canonicalPath="/"
@@ -51,7 +51,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/mustard-flowers.jpg"
+            src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363262/mm-overseas/mustard-flowers.jpg"
             alt="Golden yellow mustard flowers in blooming harvest field"
             className="h-full w-full object-cover"
           />
@@ -93,7 +93,7 @@ export default function Home() {
             </p>
             <div className="mt-6 flex items-center gap-3 sm:hidden">
               <img
-                src="/logo.png"
+                src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png"
                 alt="MM OVERSEAS Logo"
                 className="h-12 w-auto object-contain"
               />
@@ -103,14 +103,14 @@ export default function Home() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_20px_50px_rgba(6,75,60,0.12)]">
               <img
-                src="/images/hero-purely-sourced.jpg"
+                src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341877/mm-overseas/hero-purely-sourced.png"
                 alt="Purely sourced edible oil with raw mustard seeds, sesame and groundnut kernels"
                 className="h-64 w-full object-cover sm:h-[28rem]"
               />
             </div>
             <div className="absolute -right-2 -top-6 hidden rounded-xl border border-line bg-white/95 p-3 shadow-lg backdrop-blur-sm sm:block">
               <img
-                src="/logo.png"
+                src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png"
                 alt="MM OVERSEAS Brand Logo"
                 className="h-16 w-auto object-contain"
               />
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-line shadow-sm">
             <img
-              src="/images/quality-seeds-to-oils.jpg"
+              src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363326/mm-overseas/quality-seeds-to-oils.png"
               alt="Quality oilseeds with golden edible oil — from selected seeds to carefully processed oils"
               className="h-full min-h-[260px] sm:min-h-[400px] w-full object-cover"
             />

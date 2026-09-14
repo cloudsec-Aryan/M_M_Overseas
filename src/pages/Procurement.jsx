@@ -26,7 +26,7 @@ export default function Procurement() {
       />
       <HeroSection
         compact
-        image="/images/grains.jpg"
+        image="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341503/mm-overseas/grains.jpg"
         eyebrow="Procurement & quality"
         title="Quality Begins With Better Procurement"
         subtitle="At MM OVERSEAS, procurement is an important part of our quality approach. We focus on sourcing suitable oilseeds and maintaining attention to raw material quality before processing begins."

@@ -31,7 +31,7 @@ export default function Preloader() {
         <span className="preloader-ring absolute inset-0 rounded-full border-2 border-line border-t-mustard border-r-orange" />
         <span className="absolute inset-2 rounded-full border border-forest/10 bg-white shadow-[0_12px_40px_rgba(6,75,60,0.08)]" />
         <img
-          src="/logo.png"
+          src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png"
           alt="MM OVERSEAS"
           className="relative z-10 h-20 w-auto animate-pulse sm:h-24"
         />

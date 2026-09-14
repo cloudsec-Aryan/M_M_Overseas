@@ -40,7 +40,7 @@ export default function Contact() {
       />
       <HeroSection
         compact
-        image="/images/rapeseed.jpg"
+        image="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363328/mm-overseas/rapeseed.jpg"
         eyebrow="Contact"
         title="Let's Build a Better Oilseed Value Chain Together"
         subtitle="Share a product, procurement or partnership enquiry. Reach us in Devsar, Bhiwani or use the form below."

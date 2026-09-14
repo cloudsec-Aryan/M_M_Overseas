@@ -43,7 +43,7 @@ export default function Values() {
       />
       <HeroSection
         compact
-        image="/images/family-food.jpg"
+        image="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341500/mm-overseas/family-food.jpg"
         eyebrow="Our values"
         title="Our Values Define How We Work"
         subtitle="Quality is not only a manufacturing outcome. It is a way of choosing what we would serve ourselves, and what we are prepared to share with others."
@@ -78,7 +78,7 @@ export default function Values() {
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <img
-            src="/images/partners-growing-together.jpg"
+            src="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363275/mm-overseas/partners-growing-together.png"
             alt="Business partners shaking hands over edible oil and oilseeds — growing together"
             className="min-h-[360px] w-full rounded-2xl object-cover"
           />

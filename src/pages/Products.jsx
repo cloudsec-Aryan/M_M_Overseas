@@ -20,7 +20,7 @@ export default function Products() {
       />
       <HeroSection
         compact
-        image="/images/oil-bottles.jpg"
+        image="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341754/mm-overseas/oil-bottles.jpg"
         eyebrow="Our products"
         title="Products Made From Carefully Selected Oilseeds"
         subtitle="A focused range of edible oils and oil cakes produced through oilseed procurement, hygienic processing and quality-conscious manufacturing."
