@@ -121,8 +121,8 @@ export default function Navbar() {
                 <div className="mt-3 space-y-2 text-xs text-muted">
                   <p className="flex items-center gap-2">
                     <span className="font-semibold text-forest">Phone:</span>
-                    <a href={contactInfo.phoneHref} className="text-forest font-medium underline">
-                      {contactInfo.phone}
+                    <a href={contactInfo.phoneHref} className="text-forest font-semibold underline">
+                      +91 {contactInfo.phone.slice(0, 5)} {contactInfo.phone.slice(5)}
                     </a>
                   </p>
                   <p className="flex items-center gap-2">

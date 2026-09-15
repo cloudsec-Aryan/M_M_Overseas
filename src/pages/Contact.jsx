@@ -81,7 +81,7 @@ export default function Contact() {
                 className="flex items-center justify-center gap-2 rounded-xl bg-forest px-4 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-forest-deep active:scale-98"
               >
                 <span>📞</span>
-                <span>Call +91 {contactInfo.phone}</span>
+                <span>Call +91 {contactInfo.phone.slice(0, 5)} {contactInfo.phone.slice(5)}</span>
               </a>
               <a
                 href={waHref}
@@ -107,7 +107,7 @@ export default function Contact() {
                 <dt className="font-semibold text-forest">📞 Direct Phone</dt>
                 <dd className="mt-1">
                   <a href={contactInfo.phoneHref} className="text-forest font-semibold underline transition hover:text-forest-deep">
-                    +91 {contactInfo.phone}
+                    +91 {contactInfo.phone.slice(0, 5)} {contactInfo.phone.slice(5)}
                   </a>
                 </dd>
               </div>

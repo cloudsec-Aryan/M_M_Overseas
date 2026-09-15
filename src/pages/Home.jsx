@@ -158,7 +158,7 @@ export default function Home() {
               A focused range of edible oils produced from carefully selected mustard, sesame and groundnut oilseeds.
             </p>
           </SectionHeading>
-          <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-4">
             {oils.map((oil) => (
               <ProductCard key={oil.slug} image={oil.image} name={oil.name} description={oil.short} />
             ))}
@@ -173,12 +173,40 @@ export default function Home() {
             customers across the oilseed value chain.
           </p>
         </SectionHeading>
-        <div className="mt-8 grid gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-4">
           {cakes.map((cake) => (
-            <article key={cake.slug} className="group overflow-hidden rounded-xl border border-line bg-white shadow-xs transition hover:shadow-md">
-              <img src={cake.image} alt={`${cake.name} - MM OVERSEAS byproduct for cattle feed & agriculture`} className="aspect-[4/3] w-full object-cover transition duration-300 group-hover:scale-105" />
-              <div className="p-4 sm:p-5">
-                <h3 className="font-serif text-xl sm:text-2xl text-forest">{cake.name}</h3>
+            <article
+              key={cake.slug}
+              className="group flex flex-col justify-between overflow-hidden rounded-xl border border-line bg-white shadow-[0_4px_20px_rgba(6,75,60,0.04)] transition duration-300 hover:-translate-y-1 hover:border-forest/30 hover:shadow-[0_12px_32px_rgba(6,75,60,0.1)]"
+            >
+              <div>
+                <div className="relative aspect-[4/3] overflow-hidden bg-cream-warm/40">
+                  <img
+                    src={cake.image}
+                    alt={`${cake.name} - MM OVERSEAS byproduct for cattle feed & agriculture`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <span className="absolute top-2 left-2 rounded bg-orange/90 px-1.5 py-0.5 text-[10px] font-semibold text-white backdrop-blur-xs sm:text-xs">
+                    Cattle Feed
+                  </span>
+                </div>
+                <div className="p-3 sm:p-5">
+                  <h3 className="font-serif text-base font-semibold leading-tight text-forest sm:text-xl lg:text-2xl">
+                    {cake.name}
+                  </h3>
+                  <p className="mt-1.5 sm:mt-2.5 text-xs sm:text-sm leading-relaxed text-muted line-clamp-2">
+                    {cake.description}
+                  </p>
+                </div>
+              </div>
+              <div className="px-3 pb-3 sm:px-5 sm:pb-5">
+                <Link
+                  to="/products"
+                  className="inline-flex items-center gap-1 text-xs sm:text-sm font-semibold text-orange transition hover:text-forest"
+                >
+                  View Spec <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </article>
           ))}
@@ -193,9 +221,13 @@ export default function Home() {
               from reliable sources, with attention to cleanliness, condition and suitability for manufacturing.
             </p>
           </SectionHeading>
-          <div className="mt-8 grid gap-6 sm:mt-12 md:grid-cols-3">
-            {procured.map((item) => (
-              <ProcurementCard key={item.name} {...item} />
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 md:grid-cols-3">
+            {procured.map((item, idx) => (
+              <ProcurementCard
+                key={item.name}
+                {...item}
+                className={idx === 2 ? 'col-span-2 md:col-span-1' : ''}
+              />
             ))}
           </div>
           <div className="mt-8 sm:mt-10">
