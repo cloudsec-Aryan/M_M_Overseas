@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
+# Googlebot & Bingbot
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Host Declaration
+Host: https://www.mmoverseasindia.com
+
+# XML Sitemap
 Sitemap: https://www.mmoverseasindia.com/sitemap.xml
+

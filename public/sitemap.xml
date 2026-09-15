@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.mmoverseasindia.com/</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png</image:loc>
+      <image:title>MM OVERSEAS Logo</image:title>
+      <image:caption>MM OVERSEAS Edible Oil Manufacturer &amp; Oilseed Processing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341877/mm-overseas/hero-purely-sourced.png</image:loc>
+      <image:title>Purely Sourced Edible Oil</image:title>
+      <image:caption>Pure oilseeds to high-quality cooking oils</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.mmoverseasindia.com/products</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363315/mm-overseas/product-mustard-oil.png</image:loc>
+      <image:title>Mustard Oil</image:title>
+      <image:caption>Pure mustard oil produced by MM OVERSEAS</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363322/mm-overseas/product-yellow-mustard-oil.png</image:loc>
+      <image:title>Yellow Mustard Oil</image:title>
+      <image:caption>Selected yellow mustard seed oil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363318/mm-overseas/product-sesame-oil.png</image:loc>
+      <image:title>Sesame Oil</image:title>
+      <image:caption>Pure sesame seed cooking oil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dukbkeh4p/image/upload/v1789363311/mm-overseas/product-groundnut-oil.png</image:loc>
+      <image:title>Groundnut Oil</image:title>
+      <image:caption>Premium groundnut peanut oil</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.mmoverseasindia.com/procurement-quality</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mmoverseasindia.com/about</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mmoverseasindia.com/contact</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mmoverseasindia.com/values</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.mmoverseasindia.com/terms</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -13,9 +13,13 @@
       name="robots"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="author" content="MM OVERSEAS" />
     <meta name="geo.region" content="IN-HR" />
     <meta name="geo.placename" content="Bhiwani, Haryana, India" />
+    <meta name="geo.position" content="28.7930;76.1319" />
+    <meta name="ICBM" content="28.7930, 76.1319" />
     <title>Mmoverseasindia ! Edible oil | Edible Oil Manufacturer &amp; Oilseed Processing</title>
     <meta
       name="description"
@@ -46,6 +50,8 @@
       content="MM OVERSEAS produces premium mustard oil, yellow mustard oil, sesame oil, groundnut oil and oil cakes in Devsar, Bhiwani, Haryana."
     />
     <meta name="twitter:image" content="https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png" />
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -61,12 +67,14 @@
             "@id": "https://www.mmoverseasindia.com/#organization",
             "name": "MM OVERSEAS",
             "legalName": "MM OVERSEAS",
+            "alternateName": "Mmoverseasindia",
             "url": "https://www.mmoverseasindia.com/",
             "logo": "https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png",
             "image": "https://res.cloudinary.com/dukbkeh4p/image/upload/v1789341473/mm-overseas/logo.png",
-            "description": "Edible oil manufacturing and oilseed processing company producing mustard oil, yellow mustard oil, sesame oil, groundnut oil and oil cakes.",
+            "description": "Premier edible oil manufacturing and oilseed processing company producing premium mustard oil, yellow mustard oil, sesame oil, groundnut oil and oil cakes in Devsar, Bhiwani, Haryana.",
             "telephone": "+91-7419907550",
             "email": "mmoverseas2023@gmail.com",
+            "foundingDate": "2023",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Devsar",
@@ -77,8 +85,21 @@
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "addressCountry": "IN",
-              "postalCode": "127021"
+              "latitude": 28.7930,
+              "longitude": 76.1319
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-7419907550",
+              "contactType": "sales",
+              "areaServed": "IN",
+              "availableLanguage": ["en", "hi"]
             },
             "priceRange": "₹₹",
             "currenciesAccepted": "INR",
@@ -138,10 +159,56 @@
             "@type": "WebSite",
             "@id": "https://www.mmoverseasindia.com/#website",
             "url": "https://www.mmoverseasindia.com/",
-            "name": "MM OVERSEAS",
+            "name": "Mmoverseasindia ! Edible oil",
             "publisher": {
               "@id": "https://www.mmoverseasindia.com/#organization"
             }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.mmoverseasindia.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What products does MM OVERSEAS manufacture?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "MM OVERSEAS manufactures cold-pressed and pure edible oils including Mustard Oil, Yellow Mustard Oil, Sesame Oil, Groundnut Oil, and high-protein cattle feed oil cakes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the MM OVERSEAS manufacturing facility located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The manufacturing plant is located in Devsar, Bhiwani, Haryana – 127021, India."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does MM OVERSEAS provide bulk supply for businesses and distributors?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, MM OVERSEAS provides bulk orders, wholesale supply, and institutional distribution across Haryana and all over India."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can farmers or suppliers sell mustard seeds and oilseeds to MM OVERSEAS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Farmers and grain mandi suppliers can contact MM OVERSEAS procurement department directly by calling +91 74199 07550 or emailing mmoverseas2023@gmail.com."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What quality assurance does MM OVERSEAS follow?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Under the philosophy 'Achha Khao, Achha Khilao', MM OVERSEAS enforces rigorous seed grading, hygienic extraction, laboratory testing, and clean packaging standards."
+                }
+              }
+            ]
           }
         ]
       }

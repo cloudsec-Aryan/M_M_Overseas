@@ -67,7 +67,45 @@ export default function Seo({
     setMeta('meta[name="twitter:description"]', 'content', finalDesc)
     setMeta('meta[name="twitter:image"]', 'content', image.startsWith('http') ? image : `${origin}${image}`)
 
-    // Dynamic Schema script if provided
+    // Dynamic BreadcrumbList Schema for Google Search Results
+    let breadcrumbScript = document.getElementById('dynamic-breadcrumb-schema')
+    if (path && path !== '/') {
+      const cleanName = path
+        .replace(/^\//, '')
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase())
+
+      const breadcrumbData = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Home',
+            'item': `${origin}/`,
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': cleanName === 'Procurement Quality' ? 'Procurement & Quality' : cleanName,
+            'item': fullUrl,
+          },
+        ],
+      }
+
+      if (!breadcrumbScript) {
+        breadcrumbScript = document.createElement('script')
+        breadcrumbScript.id = 'dynamic-breadcrumb-schema'
+        breadcrumbScript.type = 'application/ld+json'
+        document.head.appendChild(breadcrumbScript)
+      }
+      breadcrumbScript.textContent = JSON.stringify(breadcrumbData)
+    } else if (breadcrumbScript) {
+      breadcrumbScript.remove()
+    }
+
+    // Dynamic Page Schema script if provided
     let schemaScript = document.getElementById('dynamic-page-schema')
     if (schema) {
       if (!schemaScript) {
